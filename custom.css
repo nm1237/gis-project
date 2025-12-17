@@ -1,0 +1,105 @@
+/* Custom styling - MARTA Accent Theme */
+
+/* Page background - clean white */
+body {
+  background-color: #ffffff;
+}
+
+/* Main title styling - MARTA orange banner */
+h1.title {
+  background-color: #e67e3c;
+  color:  #fffbf0;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 5px;
+  border: 3px solid #f4a941;
+}
+
+/* Section headers - gold accent with orange border */
+h1 {
+  background-color: #f4a941;
+  color: #2c2c2c;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 40px;
+  border-left: 5px solid #e67e3c;
+}
+
+/* Subsection headers - subtle cream with orange left border */
+h2 {
+  background-color: #fff9e6;
+  color: #2c2c2c;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 30px;
+  border-left: 4px solid #e67e3c;
+}
+
+h3 {
+  color: #2c2c2c;
+  font-style: italic;
+  border-left: 3px solid #f4a941;
+  padding-left: 10px;
+}
+
+/* Table of contents - cream with orange border */
+#TOC {
+  background-color: #fffbf0;
+  border: 3px solid #e67e3c;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Code styling - light cream with orange accent */
+pre {
+  background-color: #fffef7;
+  border-left: 4px solid #e67e3c;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* Highlight box for key findings - MARTA orange callout */
+.key-finding {
+  background-color: #ffecd9;
+  border: 3px solid #e67e3c;
+  border-left: 8px solid #e67e3c;
+  padding: 15px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #2c2c2c;
+  border-radius: 5px;
+}
+
+/* Section dividers - MARTA stripe pattern */
+hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, #e67e3c, #f4a941, #4a8fc4);
+  margin: 40px 0;
+}
+
+/* Add subtle MARTA color stripe at very top */
+body::before {
+  content: "";
+  display: block;
+  height: 8px;
+  background: linear-gradient(to right, #e67e3c 33%, #f4a941 33%, #f4a941 66%, #4a8fc4 66%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Add MARTA stripe at bottom too */
+body::after {
+  content: "";
+  display: block;
+  height: 8px;
+  background: linear-gradient(to right, #e67e3c 33%, #f4a941 33%, #f4a941 66%, #4a8fc4 66%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
